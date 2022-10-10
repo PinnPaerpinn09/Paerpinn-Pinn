@@ -1,0 +1,12 @@
+SEND "Input Temprerature" TO DISPLAY
+RECIEVE temprerature FROM KEYBOARD
+IF  (temprerature < 18C.)
+  SEND "Cold!,the temprerature for sleep is 18-21 degrees." TO DISPLAY
+  RECIEVE temprerature FROM KEYBOARD
+ELSE IF (temprerature > 21C.)
+  SEND "Perfect!" TO DISPLAY
+    RECIEVE temprerature FROM KEYBOARD
+ELSE SEND "Cold!,the temprerature for sleep is 18-21 degrees." TO DISPLAY
+    RECIEVE temprerature FROM KEYBOARD
+  END IF
+END IF
